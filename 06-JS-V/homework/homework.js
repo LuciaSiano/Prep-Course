@@ -37,16 +37,17 @@ function agregarStringInvertida() {
   // Ej: 'menem'.reverse() => menem
   // 'toni'.reverse() => 'inot'
   // Pista: Necesitarás usar "this" dentro de "reverse"
-  String.prototype.reverse = function(){
-    var invertidas = ""
-    for (i = this.length - 1; i >= 0; i--){
-      var invertid = [];
-      invertid[0] = this[i]
-      invertid.toString()
-      invertidas = invertidas + invertid
-    }
-    return invertidas
+ // return this.split("").reverse().join("")
+ String.prototype.reverse = function(){
+  var invertidas = ""
+  for (i = this.length - 1; i >= 0; i--){
+    var invertid = [];
+    invertid[0] = this[i]
+    invertid.toString()
+    invertidas = invertidas + invertid
   }
+  return invertidas
+ }
 }
 
 // ---------------------------------------------------------------------------//
@@ -70,10 +71,10 @@ function agregarStringInvertida() {
 }
 detalle() {
   return {
-    Nombre: this.nombre,
-    Apellido: this.apellido,
-    Edad: this.edad,
-    Domicilio: this.domicilio,
+    nombre: this.nombre,
+    apellido: this.apellido,
+    edad: this.edad,
+    domicilio: this.domicilio,
   }
 }
   }
