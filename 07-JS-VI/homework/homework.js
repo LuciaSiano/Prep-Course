@@ -57,10 +57,10 @@ function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  var NuevoArray = array.filter(function(elemento){
-    return elemento[0] === "a";
-});
-    return NuevoArray
+ var nuevoArray = array.filter(function(elemento){
+   return elemento[0] === "a"
+ })
+ return nuevoArray
 }
 
 // No modificar nada debajo de esta línea
